@@ -645,9 +645,8 @@ class MujocoHandler(BaseSimHandler):
                     actuated_joint_names.append(joint_name)
 
         assert set(robot_actuator_names) == set(actuated_joint_names), (
-            f"Actuator names {robot_actuator_names} do not match joint names {joint_names}"
+            f"Actuator names {robot_actuator_names} do not match joint names {actuated_joint_names}"
         )
-
 
         return robot_actuator_names
 
